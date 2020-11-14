@@ -1,0 +1,28 @@
+<main>
+  <div class="ml-auto Post_button">
+      <a class="btn btn-outline-dark" href="/posts/new" role="button">投稿</a>
+  </div>
+
+  <table class="table table-bordered border-primary table-hover table-sm posts_table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" style="width: 40px">No.</th>
+      <th scope="col" style="width: 700px">投稿タイトル</th>
+      <th scope="col">投稿者</th>
+      <th scope="col">投稿日</th>
+      <th scope="col">更新日時</th>
+    </tr>
+  </thead>
+  </table>
+  <tbody>
+    <% @posts.each do|post| %>
+  <tr>
+    <th><%= post.id %></th>
+    <td><%= post.title %></td>
+    <td><%= post.name %></td>
+    <td><%= post.created_at %></td>
+    <td <%= post.updated_at %></td>
+  </tr>
+  </tbody>
+  <% end %>
+</main>

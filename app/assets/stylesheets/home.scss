@@ -1,0 +1,20 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main_imgae{
+  background-image:url("/Cappadocia.jpg");
+  height: 100%;
+  width: auto;
+  font-size:40px;
+  text-align:center;
+  padding: 400px 0 100px;
+  min-height: 100vh;
+  background-size: cover;
+  color: mediumaquamarine;
+}
+.menber_add a{
+ color: mediumaquamarine;
+ width: auto;
+ color: black;
+}

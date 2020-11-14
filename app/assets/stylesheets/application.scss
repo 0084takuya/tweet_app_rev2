@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+ a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  height: auto;
+}
+
+body{
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+
+}
+
+.top_header{
+ text-align: center;
+
+}
+.all_post{
+ float: right;
+  position: relative;right: 20px;bottom: 45px;
+
+}
+.all_post a{
+color: black;
+}
+
+.user_show{
+  font-size: 20px;
+}
+header{
+  background-color:lightseagreen;
+}
+@import "bootstrap";

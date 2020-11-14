@@ -1,0 +1,35 @@
+
+<div class="user_header">
+  <h1>会員登録</h1>
+</div>
+
+<%= form_for @users,url:'/user/add' do |f| %>
+  <div class="form-group">
+      <%= f.label :name, 'user名' %>
+      <%= f.text_field :name, class: 'form-control' %>
+      <small id="user_name-tip" class="form-text text-muted">
+         Create User Name
+      </small>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :email, 'E-mail' %>
+    <%= f.text_field :email, class: 'form-control' %>
+    <small id="user_email-tip" class="form-text text-muted">
+          your E-mail
+    </small>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :'password','パスワード' %>
+    <%= f.text_field :password, class: 'form-control', rows:10 %>
+    <small id=password-tip" class="form-text text-muted">
+      password
+    </small>
+
+  </div>
+   <%= f.submit '登録', class: 'btn btn-info btn-block' %>
+   <small id="submit-tip" class="form-text text-muted">
+     create
+   </small>
+  <% end %>

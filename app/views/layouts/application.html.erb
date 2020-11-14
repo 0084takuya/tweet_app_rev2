@@ -8,6 +8,17 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+<header>
+  <div class="top_header">
+    <a href="/top"><h1>Tweet_app</h1></a>
+  </div>
+  <div class="all_post">
+     <a href="/posts/index"><h1>投稿一覧</h1></a>
+  </div>
+  <div class="user_show">
+    <a href="/user/index"<h1>menber list</h1></a>
+  </div>
+</header>
 
   <body>
     <%= yield %>

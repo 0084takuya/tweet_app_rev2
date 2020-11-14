@@ -1,0 +1,20 @@
+<main>
+  <table class="table table-bordered border-primary table-hover table-sm posts_table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" style="width: 40px">No.</th>
+      <th scope="col">User Name</th>
+      <th scope="col">e-mail</th>
+    </tr>
+  </thead>
+  </table>
+  <tbody>
+    <% @user.each do|user| %>
+  <tr>
+    <th><%=user.id %></th>
+    <td><%=user.name %></td>
+    <td><%=user.email %></td>
+  </tr>
+  </tbody>
+  <% end %>
+</main>
